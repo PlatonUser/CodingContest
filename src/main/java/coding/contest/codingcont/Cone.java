@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Cone {
     private final LocalDate date;
     private final List<Scoop> scoops = new ArrayList<>();
@@ -29,7 +30,11 @@ public class Cone {
     }
 
     public double getTotalGrossPrice() {
-        return scoops.stream().mapToDouble(Scoop::getGrossPrice).sum();
+        double total = 0.0;
+        for (int i = 0; i < scoops.size(); i++) {
+            total += scoops.get(i).getGrossPrice();
+        }
+        return total;
     }
 
     @Override
