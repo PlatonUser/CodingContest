@@ -19,4 +19,4 @@ public class Scoop {
     public String toString() {
         return flavor.getName() + " (€" + String.format("%.2f", getGrossPrice()) + ")";
     }
-},
+}
