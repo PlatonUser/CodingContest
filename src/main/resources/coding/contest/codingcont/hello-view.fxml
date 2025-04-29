@@ -9,24 +9,6 @@
       <ChoiceBox layoutX="48.0" layoutY="32.0" prefWidth="150.0" />
       <Button layoutX="48.0" layoutY="58.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="add Scoop" />
       <Button layoutX="48.0" layoutY="84.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="New cone" />
-      <Accordion layoutX="22.0" layoutY="251.0">
-        <panes>
-          <TitledPane animated="false" text="untitled 1">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
-          </TitledPane>
-          <TitledPane animated="false" text="untitled 2">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
-          </TitledPane>
-          <TitledPane animated="false" text="untitled 3">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
-          </TitledPane>
-        </panes>
-      </Accordion>
+      <Accordion layoutX="22.0" layoutY="251.0" />
    </children>
 </AnchorPane>
