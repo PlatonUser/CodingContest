@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coding.contest.codingcont.HelloController">
    <children>
-      <TreeView layoutX="361.0" layoutY="32.0" prefHeight="200.0" prefWidth="200.0" />
-      <ChoiceBox layoutX="48.0" layoutY="32.0" prefWidth="150.0" />
-      <Button layoutX="48.0" layoutY="58.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="add Scoop" />
-      <Button layoutX="48.0" layoutY="84.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="New cone" />
-      <Accordion layoutX="22.0" layoutY="251.0" />
-      <Button layoutX="22.0" layoutY="345.0" mnemonicParsing="false" onAction="#btNewOrder" text="New Order" />
-      <Button layoutX="490.0" layoutY="345.0" mnemonicParsing="false" onAction="#btFinishOrder" text="Finish order" />
+      <TreeView fx:id="coneTreeView" layoutX="361.0" layoutY="32.0" prefHeight="200.0" prefWidth="200.0" />
+      <ChoiceBox fx:id="chChooseFlavor" layoutX="48.0" layoutY="32.0" prefWidth="150.0" />
+      <Button layoutX="48.0" layoutY="58.0" mnemonicParsing="false" onAction="#btAddScoop" prefHeight="26.0" prefWidth="150.0" text="add Scoop" />
+      <Button layoutX="48.0" layoutY="84.0" mnemonicParsing="false" onAction="#btNewCone" prefHeight="26.0" prefWidth="150.0" text="New cone" />
+      <Button layoutX="22.0" layoutY="353.0" mnemonicParsing="false" onAction="#btNewOrder" text="New  Order" />
+      <Button layoutX="497.0" layoutY="353.0" mnemonicParsing="false" onAction="#btFinishOrder" text="Finish Order" />
    </children>
 </AnchorPane>
