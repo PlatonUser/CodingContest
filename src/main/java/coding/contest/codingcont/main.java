@@ -12,7 +12,7 @@ public class main extends Application {
         stage.setTitle("Ice Cream Cashier");
         stage.setScene(scene);
         stage.show();
-    }
+    },
 
     public static void main(String[] args) {
         launch(args);
